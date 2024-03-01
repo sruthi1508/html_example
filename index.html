@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+<!-- hero -->
+        <section id="div">
+            <div class="carousel">
+                <ul class="slides">
+                    <input type="radio" name="radio-buttons" id="img-1" checked />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img alt="slider image" src="assets/image/slide1.png">
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-2" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img alt="slider image" src="assets/image/slide2.png">
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-3" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img alt="slider image" src="assets/image/slide3.png">
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-4" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img alt="slider image" src="assets/image/slide4.png">
+                        </div>
+                    </li>
+                    <div class="carousel-dots">
+                        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                        <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+                    </div>
+                </ul>
+            </div>
+            </div>
+        </section>
+<!-- first div -->
+        <section id="div1">
+            <!-- description -->
+            <div class="des-row">
+                <div class="des-col">
+                    <p>
+                        Modon's premier residential real estate community located in an elevated position overlooking
+                        the
+                        skyline of Abu Dhabi
+                        and the endless, distant horizon
+                    </p>
+                </div>
+                <div class="des-col">
+                    <p>
+                        The Hills on Hudayriyat Island have been designed to create a unique preeminent living
+                        experience
+                        rarely
+                        seen within the
+                        region. These unique highlands will be home to superior mansions and premium villas which will
+                        command
+                        incredible views
+                        of the surrounding areas. As Hudayriyat continues to grow, the residents will live in an
+                        enviable
+                        address which will
+                        provide Olympic-grade sporting facilities, expansive sandy beaches, hospitality, and leisure to
+                        enrich
+                        the lives of
+                        everyone.
+                    </p>
+                </div>
+            </div>
+            <!-- buttons -->
+            <div class="btn">
+                <button role="button" aria-label="download button" class="button-outline">
+                    <label>
+                        Download Brochure
+                    </label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z"
+                            fill="black" />
+                    </svg>
+                </button>
+                <button role="button" aria-label="download button" class="button-filled">
+                    <label>
+                        Register Your Interest
+                    </label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M4 15H6V20H18V4H6V9H4V3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V15ZM10 11V8L15 12L10 16V13H2V11H10Z"
+                            fill="black" />
+                    </svg>
+                </button>
+                <button role="button" aria-label="download button" class="button-outline">
+                    <label>
+                        Download Payment Plan
+                    </label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z"
+                            fill="black" />
+                    </svg>
+                </button>
+            </div>
+            <!-- features -->
+            <div class="feature-row">
+                <div class="video1">
+                    <video autoplay loop>
+                        <source src="assets/video/video.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="video1">
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+                    <h3>Features</h3>
+                    <div class="list">
+                        <ul class="features-list">
+                            <li class="item">
+                                Elevated Sea & City Views
+                            </li>
+                            <li class="item">
+                                Up to 30,000 m2 Mansions
+                            </li>
+                            <li class="item">
+                                17 Different Villa Types
+                            </li>
+                            <li class="item">
+                                Club House
+                            </li>
+                            <li class="item">
+                                Gated Community
+                            </li>
+                            <li class="item">
+                                Elevated Sea & City Views
+                            </li>
+                            <li class="item">
+                                Club House
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- map -->
+        <section id="map">
+            <iframe
+            width="100%"
+            height="500px"
+            style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=Marino+Tech+Services+Pvt.+Ltd.+2nd+Floor%2C+Thomson+Building%2C+Cheruparambath+Rd.%2C+Kadavanthra%2C+Ernakulam+682020%2C+Kerala%2C+India"
+            allowfullscreen>
+        </iframe>
+        </section>
+    </main>
+    <!-- auto slider -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentSlide = 1;
+            function showSlide(index) {
+                var radio = document.getElementById('img-' + index);
+                radio.checked = true;
+            }
+            function nextSlide() {
+                currentSlide = (currentSlide % totalSlides) + 1;
+                showSlide(currentSlide);
+            }
+            var totalSlides = document.querySelectorAll('.slides li.slide-container').length;
+            setInterval(nextSlide, 5000);
+        });
+    </script>
+   
+    
+    
+</body>

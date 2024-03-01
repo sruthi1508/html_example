@@ -1,0 +1,42 @@
+ 
+    .syna {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px;
+        
+        
+    }
+    
+    h1 {
+        font-family: Poppins;
+        font-size: 70px;
+        text-align:center;
+        padding-top: 75px;
+        padding-bottom: 10px;
+        background: linear-gradient(90.5deg, #03FFB3 20.23%, #0A7CCE 60.81%);
+        -webkit-background-clip: text; 
+        background-clip: text;
+        color: transparent; 
+        font-weight: bolder;
+        font-stretch: ultra-expanded;
+        -webkit-text-stroke: 50px linear-gradient(90.5deg, #03FFB3 10.23%, #0A7CCE 60.81%);
+        text-stroke: 50px linear-gradient(90.5deg, #03FFB3 20.23%, #0A7CCE 60.81%);
+    
+    }
+    
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* 5 columns */
+        grid-gap: 15px; /* gap between grid items */
+        
+    }
+    
+    .image-grid img {
+        width: 68%; /* take full width of its container */
+        height: 88%;
+        object-fit: contain;
+    }
+    
+   
+  
