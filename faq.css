@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+header {
+    background-color:white;
+    color: #0092FC;
+    padding-top: 0;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+#search {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+#searchbar{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.search h1{
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+main {
+    padding: 20px;
+}
+
+.faq-section {
+    background-color: #F4FAFF;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px 15px 15px 15px;
+}
+.question {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #383C42;
+}
+.ans{
+    font-size: 18px;
+    color:#626773;
+    visibility: hidden;
+}
+.question:hover ~ .ans{
+    visibility: visible;
+    display: block;
+}
+footer {
+    background-color: #3B646E;
+    padding: 10px 0;
+    /* text-align: center; */
+}
+footer nav {
+    float: right;
+
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}

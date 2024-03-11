@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fmarino_faq</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LOGO</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="abt.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <section id="search">
+            <h1>FAQ</h1>
+            <input type="text" id="searchbar" placeholder="Search...">
+        </section>
+        <section class="faq-section">
+                <div class="question">
+                    <h3>How does the verification process in Ship CoC work??</h3>
+                </div>
+                <div class="ans">
+                    <p>All you have to do is upload the excel file containing the details of the seafarers. The
+                        system verifies the validity of these certificates by going to the appropriate sites or by
+                        sending emails to the appropriate authority.</p>
+                </div>
+                <div class="question">
+                    <h3>What types of certificates does Ship CoC verify?</h3>
+                </div>
+                <div class="ans">
+                    <p>All you have to do is upload the excel file containing the details of the seafarers. The
+                        system verifies the validity of these certificates by going to the appropriate sites or by
+                        sending emails to the appropriate authority.</p>
+                </div>
+                <div class="question">
+                    <h3>Who can use Ship CoC?</h3>
+                </div>
+                <div class="ans">
+                    <p>All you have to do is upload the excel file containing the details of the seafarers. The
+                        system verifies the validity of these certificates by going to the appropriate sites or by
+                        sending emails to the appropriate authority.</p>
+                </div>
+                <div class="question">
+                    <h3>Is there a free trial available?</h3>
+                </div>
+                <div class="ans">
+                    <p>All you have to do is upload the excel file containing the details of the seafarers. The
+                        system verifies the validity of these certificates by going to the appropriate sites or by
+                        sending emails to the appropriate authority.</p>
+                </div>
+                <!-- Add more questions and answers here -->
+        </section>
+        <!-- Add more sections for different categories of questions -->
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            <!-- </nav>
+            <p>&copy; 2024 My Website. All rights reserved.</p> -->
+        </div>
+    </footer>
+    
+</body>
+
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const questions = document.querySelectorAll('.question');
+
+    questions.forEach(question => {
+        const answer = question.querySelector('.ans');
+        const arrow = document.createElement('span');
+        arrow.classList.add('arrow');
+        arrow.innerHTML = '&#9660;';
+        question.appendChild(arrow);
+
+        arrow.addEventListener('click', () => {
+            const isExpanded = answer.style.display === 'block';
+
+            questions.forEach(q => {
+                q.querySelector('.ans').style.display = 'none';
+                q.querySelector('.arrow').innerHTML = '&#9660;';
+            });
+
+            if (!isExpanded) {
+                answer.style.display = 'block';
+                arrow.innerHTML = '&#9650;';
+            }
+        });
+    });
+});
+
+</script>

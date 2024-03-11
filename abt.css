@@ -1,0 +1,736 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: white;
+    color: #0092FC;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+}
+
+.div1 {
+    flex: 1;
+}
+
+.div1 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.div1 p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+#dev {
+    background-color: white;
+    padding: 50px 0;
+}
+
+#dev .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.des2 {
+    flex: 1;
+    padding: 0 20px; /* Add padding for spacing */
+}
+
+.des2 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.des2 p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.teamimg {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px; /* Curved corners */
+    object-fit: cover;
+    box-shadow: 0 8px 10px rgba(12, 230, 230, 0.5); /* New shadow effect */
+    animation: slideInLeft 1s ease-out; /* Animation for the image */
+}
+
+/* Animation for the second section */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Adjustments for the team section */
+#dev .dd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideInRight 1s ease-out; /* Animation for the text */
+}
+
+#dev .dd h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#dev .dd p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#dev2 .dd1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideInRight 1s ease-out; /* Animation for the text */
+}
+
+#dev2 .dd1 .des3 {
+    flex: 1;
+    padding: 0 20px; /* Add padding for spacing */
+}
+
+#dev2 .dd1 .des3 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#dev2 .dd1 .des3 p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.missionimg {
+    flex: 2;
+    padding: 0 20px; /* Add padding for spacing */
+    position: relative;
+}
+
+.rectanglem {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(92, 192, 240, 0.2);
+    border-radius: 9rem;
+}
+
+.imgmission {
+    width: 100%;
+    height: auto;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    opacity: 0; /* Initially set to transparent */
+    animation: fadeIn 2s ease-out; /* Animation for image opacity */
+}
+
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+/* Copy this code after the above code */
+@keyframes imgmission {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+#dev1{
+    background-color: #51828F;
+}
+.cert {
+    text-align: center; /* Center alignment for certification section */
+    padding: 50px 0;
+}
+
+.certificate {
+    display: inline-block;
+}
+
+.c1 {
+    margin-bottom: 20px;
+}
+
+.chead {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:white;
+}
+
+.cpara {
+    font-size: 16px;
+    line-height: 1.5;
+    color:white;
+}
+#clients {
+    background-color: #fff;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#clients .container {
+    text-align: center;
+}
+
+#clients h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#clients p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+}
+
+.client-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-images img {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.slide-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slide-indicator.active {
+    background-color: #000;
+}
+
+
+/* footer {
+    background-color: #3B646E; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+} */
+
+/* footer .container1 {
+    display: flex;
+    align-items: center;
+}
+
+footer .left-section {
+    margin-right: 10px;
+}
+
+footer .left-section .rectangle {
+    width: 50px;
+    height: 100px;
+    background-color: #16455;
+    border-radius: 20px;
+}
+
+footer .right-section {
+    display: flex;
+    align-items: center;
+}
+
+footer .right-section .box {
+    background-color: #164551;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+footer .right-section .row {
+    margin-bottom: 10px;
+}
+
+footer .right-section img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav {
+    float: right;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+}
+
+footer nav ul li {
+    margin-left: 20px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+} */
+/* .container-about {
+    width: 144rem;
+    height: 61.8rem;
+    position: absolute;
+    left: 0;
+    top: 83.9rem;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+  
+.header-section {
+    margin: 0rem 0rem 1.5rem 133rem;
+    box-sizing: border-box;
+    padding: 1.969rem 1.962rem 1.925rem 1.96rem;
+    background-color: #91beca;
+    border-radius: 2.8rem;
+    box-shadow: 0 1.1rem 1.63rem rgba(55, 97, 108, 0.1000000015);
+    flex-shrink: 0;
+}
+  
+.upward-arrow {
+    width: 1.6781rem;
+    height: 1.706rem;
+    object-fit: contain;
+    vertical-align: top;
+}
+  
+.main-section {
+    width: 100%;
+    height: 54.7rem;
+    position: relative;
+    background-color: #3b646e;
+    flex-shrink: 0;
+}
+  
+.content-section {
+    width: 144rem;
+    height: 42.3rem;
+    position: absolute;
+    left: 0;
+    top: 9.2rem;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+  
+.product-list {
+    margin: 0rem 9.935rem 0rem 0rem;
+}
+  
+.section-title {
+    font-size: 2.6rem;
+    color: #ffffff;
+}
+  
+.product-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+  
+.service-list {
+    margin: 0rem 9.935rem 0rem 0rem;
+}
+  
+.service-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+  
+.about-section,
+.contact-section {
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin-top: 3.8rem;
+    cursor: pointer;
+}
+  
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+    width: 56rem;
+    margin-top: 3.8rem;
+}
+  
+.links-group,
+.images-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+  
+.gdpr-certificate,
+.mask-image {
+    width: 11.1rem;
+    height: 11.1rem;
+    object-fit: contain;
+}
+  
+.separator {
+    width: 144rem;
+    height: 0.1rem;
+    background-color: #ffffff;
+    opacity: 0.2;
+    position: absolute;
+    top: 51.5rem;
+}
+  
+.copyright {
+    font-size: 1.4rem;
+    color: #ffffff;
+    position: absolute;
+    top: 57.4rem;
+    left: 12.2rem;
+}
+  
+.footer-section {
+    width: 144rem;
+    height: 14.1rem;
+    position: absolute;
+    bottom: 0;
+    background-color: #1c3b42;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.8rem 11rem 2.8rem 11rem;
+}
+  
+  .location-info,
+  .contact-info {
+    display: flex;
+    gap: 8.2rem;
+  }
+  
+  .company-name,
+  .address {
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  
+  .location,
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  
+  .call-icon,
+  .mail-icon {
+    width: 2.9rem;
+    height: 2.9rem;
+    object-fit: contain;
+  }
+
+   */
+/* Updated CSS for Footer and Mission Sections */
+
+/* Footer Section */
+footer {
+    background-color: #3B646E;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Occupy full width of the viewport */
+}
+
+.container-about {
+    width: 100%;
+    max-width: 144rem; /* Maximum width for content */
+    margin: 0 auto; /* Center align content */
+    padding: 0 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.header-section {
+    /* margin: 0;
+    padding: 20px 0; */
+}
+
+.main-section {
+    width: 100%;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.content-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* .product-list,
+.service-list {
+    margin-bottom: 20px; 
+} */
+
+/* .section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+} */
+
+/* .product-items,
+.service-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+} */
+
+/* .about-section,
+.contact-section,
+.blog-section,
+.faq-section {
+    font-size: 24px;
+    margin-top: 10px; 
+    cursor: pointer;
+} */
+
+/* .additional-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+} */
+/* .navigation-list {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.navigation-list ul li {
+    margin-right: 20px; 
+}
+
+.navigation-list ul li:last-child {
+    margin-right: 0; 
+    
+}
+
+.navigation-list ul li a {
+    text-decoration: none;
+    color:white; 
+    font-weight: bold;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+}
+
+.navigation-list ul li a:hover {
+    background-color: #eee; 
+    color: #000;  
+} */
+.navigation-list {
+    display: flex;
+    justify-content: flex-end; /* Aligns the list to the right */
+}
+
+.navigation-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigation-list li {
+    margin-left: 50px; /* Adjust spacing between list items */
+}
+
+.navigation-list li:first-child {
+    margin-left: 0; /* Removes margin from the first list item */
+}
+
+.navigation-list li a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold; /* Optional: Adjust the font weight as needed */
+}
+
+
+.images-group {
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end; /* Align images horizontally to the right */
+}
+
+.gdpr-certificate,
+.mask-image {
+    width: 100px;
+    height: auto;
+}
+
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.2;
+    margin-top: 20px; /* Add margin for separation */
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 20px; /* Add margin for separation */
+}
+
+.footer-section {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* justify-content: center; */
+    background-color: #1c3b42;
+    border-radius: 2rem;
+
+}
+
+.location-info,
+.contact-info {
+    /* display: flex; */
+    flex-direction: column;
+    gap: 10px; /* Adjust gap between items */
+}
+
+.company-name,
+.address {
+    font-size: 14px;
+    color: #fff;
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+}
+
+
+.mail-icon {
+    width: 20px; /* Adjust icon size */
+    height:20px;
+    flex:1;
+}
+/* .call-icon{
+    flex:1;
+
+} */
+.mail{
+    flex:2;
+}
+.call-icon{
+    width:20px;
+    height:20px;
+    flex:1
+    
+}
+.call-num{
+    flex:2;
+}
